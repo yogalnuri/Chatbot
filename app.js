@@ -32,5 +32,5 @@ app.post('/chat', function(req, res){
 });
 
 app.listen(port, function(){
-  console.log('server started on Port'+port' ...')
+  console.log('server started on Heroku ...')
 });
