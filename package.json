@@ -12,6 +12,6 @@
     "express": "^4.16.2"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
   "start": "node app.js"
 }
