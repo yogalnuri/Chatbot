@@ -1,7 +1,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var path = require('path');
-var port = process.env.port;
+var port = process.env.port||6969;
 
 var app = express();
 var apiai = require('apiai');
