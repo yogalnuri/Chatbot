@@ -11,11 +11,11 @@ var apiapp = apiai("4155768d2ec44c59bd45b146fa5f3fac");
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
-app.get('/', function(req, res){
+app.get('/chat', function(req, res){
   res.send('Hello world!!');
 });
 
-app.post('/chat', function(req, res){
+app.post('/', function(req, res){
   console.log(req.body.chatText);
   var request = apiapp.textRequest(req.body.chatText, {
     sessionId: '123123'
