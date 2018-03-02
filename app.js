@@ -1,7 +1,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var path = require('path');
-var port = process.env.port||6969;
+var port = process.env.port;
 
 var app = express();
 var apiai = require('apiai');
@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
 app.get('/', function(req, res){
-  res.send('Hello world!!');
+  app.post(req,res);
 });
 
 app.post('/', function(req, res){
