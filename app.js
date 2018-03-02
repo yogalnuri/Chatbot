@@ -11,7 +11,7 @@ var apiapp = apiai("4155768d2ec44c59bd45b146fa5f3fac");
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
-app.get('/chat', function(req, res){
+app.get('/', function(req, res){
   res.send('Hello world!!');
 });
 
