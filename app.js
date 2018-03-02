@@ -31,6 +31,6 @@ app.post('/', function(req, res){
   request.end();
 });
 
-app.listen(port, function(){
+app.listen(process.env.port, function(){
   console.log('server started on Heroku ...')
 });
