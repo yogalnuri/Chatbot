@@ -1,7 +1,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var path = require('path');
-var port = process.env.port;
+app.set('port', process.env.PORT || 5000);
 
 var app = express();
 var apiai = require('apiai');
@@ -31,6 +31,6 @@ app.post('/', function(req, res){
   request.end();
 });
 
-app.listen(process.env.port, function(){
-  console.log('server started on Heroku ...')
+app.listen(app.get('port'), function () {
+    console.log('Express server listening on port ' + app.get('port'));
 });
